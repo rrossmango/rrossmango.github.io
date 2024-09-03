@@ -1,0 +1,146 @@
+@font-face { 
+    font-family: SUSE Regular; 
+    src: url('assets/SUSE-Regular.ttf'); 
+} 
+
+@font-face { 
+    font-family: SUSE Bold; 
+    src: url('assets/SUSE-Bold.ttf'); 
+} 
+
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Tahoma, 'Times New Roman', Times, serif;
+}
+
+ul{
+    padding-inline-start: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+
+}
+
+h1, h2, h3 {
+    font-family: 'SUSE Bold';
+    color: var(--wm-colours-dark);
+}
+
+h2 {
+    font-size: 4rem;
+    padding-bottom: 0.25rem;
+}
+
+
+h3 {
+    font-size: 2.4rem;
+    padding-bottom: 0.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+
+}
+
+p {
+    margin: 1px 0;
+    padding: 0;
+    font-size: 1rem;
+    letter-spacing: 0.01rem; 
+  }
+
+.profile {
+    border-radius:20px
+}
+
+.reframe {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 100px;
+    object-fit: cover;
+    border-radius: 0.05rem;
+    padding: 1rem;
+}
+
+.wm-section { 
+    background-color: #ffffff;
+    padding: 1.2rem;
+    margin: 1.2rem;
+    border: 1rem solid #ffffff;
+    border-radius: 0.5rem;
+}
+
+.wm-flex-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* General - Navigation*/
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 8vh;
+    padding: 2%;
+	z-index: 4
+}
+
+.nav-list{
+    list-style: none;
+    width:40%;
+    font-size: 1.2em;
+}
+
+.nav-item{
+    padding: 2%;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: var(--wm-colours-dark);
+}
+
+a:hover {
+    text-decoration: underline;
+  }
+
+/* General - Footer */
+
+footer {
+    background-color: var(--wm-colours-dark);
+}
+
+.footer-content {
+    padding: 1em 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.footer-content h2{
+    color: var(--wm-colours-light);
+}
+
+.footer-content p{
+    color: var(--wm-colours-light);
+    
+}
+
+
+#icons-light {
+    font-size: large;
+    z-index: 4;
+}
+
+.fab-light {
+    color: var(--wm-colours-light)
+}

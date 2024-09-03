@@ -1,44 +1,89 @@
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Personal website for Ryan Rossmango, a cryogenics engineer at HRL Laboratories, a builder, and UCLA graduate">
 
-<html>
-  <head>
-    <title>ryan's personal website!</title>
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="fixed-top">
-      <div class="navbar">
-        <div>
-          ellie cheng
-        </div>
-        <div class="text-right">
-          link to resume
-        </div>
-      </div>
-    </div>
+        <!-- Tab Info -->
+        <title>Ryan Rossmango</title>
+        <!--<link rel="icon" href="assets\favicon.png" type="image/gif" sizes="16x16">-->
+        
 
-    <!-- ellie is cool! -->
-    <h1>learn more about ellie!</h1>
+        <!-- Fonts -->
+        <link rel="preload" href="assets/SUSE-Bold.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="assets/SUSE-Regular.ttf" as="font" type="font/ttf" crossorigin>
 
-    <div class="grid-2">
-      <div class="what-colin-said">
-        <h2>about me</h2>
-          <p class="info-box white-box" id="red-box">
-            hi, my name is ellie! I'm very cool :) I also wrote
-            <a href="http://links.uclaacm.com">a cool website!</a>
-          </p>
-      </div>
-      <div class="what-colin-said">
-        <img
-          class="ellie-photo"
-          src="https://ellieyhcheng.github.io/Assets/profile.jpg"
-          alt="a great picture of ellie"
-        />
-      </div>
-    </div>
+        <!-- Stylesheets-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-    <p class="info-box">
-      contact me! @ellie
-    </p>
-  </body>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N3FZTFC6N"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-4N3FZTFC6N');
+        </script>
+
+    </head>
+    <body> 
+        <header>
+            <div class="nav-bar">
+                <nav class="nav">
+                    <ul class="nav-list wm-flex-row">
+                            <li class="nav-item"><a href="index.html" name="Link to Home Page" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="engineering.html" name="Link to Home Page" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="education.html" name="Link to Home Page" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="hobbies.html" name="Link to Home Page" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="blog.html" name="Link to Home Page" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="skills.html" name="Link to Home Page" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="apps.html" name="Link to Home Page" class="nav-link">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Home Page -->
+        <section class="wm-section">
+            <h2 class="wm-section-title">Ryan Rossmango</h2><br></br>
+            <h3 class="wm-section-title">currently, I am:</h3><br>
+            <p> 
+              - modding and tinkering with dilution refrigerators at hrl labs<br>
+              - filming, editing, and showcasing as many projects as I can on my youtube!<br>
+              - typing up a social app (stay tuned!)<br><br>
+            </p>
+            <h3 class="wm-section-title">my interests:</h3><br>
+            <p>
+              - creating hardware and software projects, and everything in between<br>
+              - 3D-printing, mechatronics, and mechanical design<br>
+              - working visibly and helping others learn!<br><br>
+            </p>
+            <h3 class="wm-section-title">notable past chapters:</h3><br>
+            <p>
+              - helped new engineering students begin their careers! find some of them at NASA, TESLA, and Amazon now<br>
+              - designed a new kind of electromechanical relay spring mechanism<br>
+              - built cars (of size small, medium, and large)<br><br>
+            </p>
+        </section>
+    </body>
+
+
+    <footer>
+        <div class="wm-section">
+            <div class="footer-content">
+            <div class="wm-flex-row footer-icons">
+                <ul class="wm-icon" id="icons-light">
+                    <li><a href="https://www.linkedin.com/in/ryan-rossmango/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/@ryan_rossmango"><i class="fab fa-youtube-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/ryan_rossmango/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/ryan_rossmango"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <p>Made by Ryan Rossmango &copy; 2024 </p>
+    </footer>
+
 </html>

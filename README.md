@@ -10,13 +10,14 @@ pov: you are searching the files for my state-of-the-art personal website
 - Education (my ucla years)
 - Hobbies (how I have fun!)
 - Blog (my miscellaneous thoughts on miscellaneous things)
-- Skills (a breakdown of my toolbelt and where I learned them)
+- Skills (a breakdown of my toolbelt and where I acquired them)
 
 ### Why? :hammer_and_wrench:
 
-To continue learning coding and Git
-To continue building my personal spider web (showcasing myself all over the web :D)
-To let companies see more about me, beyond a 1-page resume
+- To continue learning coding and Git
+- To expand my personal spider web (showcasing myself all over the web :D)
+- To let companies/people know more about me, beyond a 1-page resume
 
-### Special thanks to those (Ronak Roy, Anson Yu, Hudzah, and Matt Wang) who have built cool websites
+### Emojis
+https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
