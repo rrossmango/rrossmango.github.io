@@ -95,24 +95,27 @@ p {
 }
 
 .nav-list{
-    list-style: none;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
     width:40%;
     font-size: 1.2em;
 }
 
 .nav-item{
+    margin-right: 20px;
     padding: 0.5rem
 }
 
-a:link, a:visited{
+.nav-link {
+    color:black;
     text-decoration: none;
-    color: var(--wm-colours-dark);
+    transition: color 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
-  }
-
+.nav-link:hover {
+    color: teal;
+}
 /* General - Footer */
 
 footer {
