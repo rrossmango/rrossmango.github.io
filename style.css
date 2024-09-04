@@ -101,8 +101,9 @@ p {
     justify-content: flex-start;
     list-style-type: none;
     padding: 1rem;
-    margin-left: 1.25rem;
+    margin: 1.2rem;
     font-size: 1.2em;
+    gap: 4rem
 }
 
 .nav-item{
