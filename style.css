@@ -98,7 +98,6 @@ p {
     justify-content: flex-start;
     align-items: center;
     min-height: 8vh;
-    padding: 20rem;
 	z-index: 4
 }
 
@@ -106,7 +105,7 @@ p {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    padding: 1rem;
+    padding: 3rem;
     font-size: 1.2em;
 }
 
