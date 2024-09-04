@@ -18,6 +18,8 @@ pov: you are searching the files for my state-of-the-art personal website
 - To expand my personal spider web (showcasing myself all over the web :D)
 - To let companies/people know more about me, beyond a 1-page resume
 
+Plus, the generic wix site felt too impersonal
+
 ### Emojis
 https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
