@@ -100,13 +100,14 @@ p {
     align-items: center;
     justify-content: flex-start;
     list-style-type: none;
+    padding: 1rem;
     padding-inline: 4rem;
-    margin: 2rem;
+    margin: 1rem;
     font-size: 1.2em;
 }
 
 .nav-item{
-    margin-right: 20px;
+    margin-right: 4rem;
 }
 
 .nav-item:last-child {
