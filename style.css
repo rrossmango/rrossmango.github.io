@@ -84,7 +84,7 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /*justify-content: flex-start;*/
+    justify-content: flex-start;
   }
 
 /* General - Navigation*/
@@ -116,12 +116,13 @@ p {
 
 .nav-link {
     color:black;
-    text-decoration: underline;
-    transition: color 1s ease;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
     color: teal;
+    text-decoration: underline;
 }
 /* General - Footer */
 
