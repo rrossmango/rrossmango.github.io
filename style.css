@@ -8,6 +8,8 @@
     src: url('assets/SUSE-Bold.ttf') format('truetype'); 
 } 
 
+/*Basics*/
+
 html, body {
     overflow-x: hidden;
 }
@@ -41,7 +43,7 @@ h2 {
 
 
 h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding-bottom: 0.25rem;
 }
 
@@ -78,21 +80,21 @@ p {
     border-radius: 0.5rem;
 }
 
-.wm-flex-row {
+.wm-flex-row { /*making a horizontal row*/
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
   }
 
 /* General - Navigation*/
 
 .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     min-height: 8vh;
-    padding: 2%;
+    padding: 0.5rem;
 	z-index: 4
 }
 
@@ -100,7 +102,7 @@ p {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    padding: 0;
+    padding: 1rem;
     font-size: 1.2em;
 }
 
@@ -114,8 +116,8 @@ p {
 
 .nav-link {
     color:black;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    text-decoration: underline;
+    transition: color 1s ease;
 }
 
 .nav-link:hover {
