@@ -45,13 +45,13 @@ h1, h2, h3 {
 
 h2 {
     font-size: 4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 
 h3 {
     font-size: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 4rem;
     margin-bottom: 0.2rem;
 }
 
@@ -85,8 +85,8 @@ p {
 .wm-section { 
     background-color: #ffffff;
     padding: 1.2rem;
-    margin: .1rem;
-    border: 1rem solid #ffffff;
+    margin: 0rem;
+    border: 0.5rem solid #ffffff;
     border-radius: 0.5rem;
 }
 
