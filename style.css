@@ -25,6 +25,7 @@ body{
 
 ul{
     padding-inline-start: 0;
+    list-style-position: inside;
     margin-bottom: 0.1rem
 }
 
@@ -44,12 +45,13 @@ h1, h2, h3 {
 
 h2 {
     font-size: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 
 h3 {
     font-size: 2rem;
+    margin-top: 0.2rem;
     margin-bottom: 0.2rem;
 }
 
@@ -145,8 +147,8 @@ footer {
 .footer-content {
     padding: 1em 0.5em;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
 } 
 
 .footer-content h2{
