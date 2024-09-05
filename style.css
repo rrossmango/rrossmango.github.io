@@ -45,13 +45,13 @@ h1, h2, h3 {
 
 h2 {
     font-size: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 
 h3 {
     font-size: 2rem;
-    margin-top: 0.2rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.2rem;
 }
 
@@ -160,6 +160,16 @@ footer {
     
 }
 
+.wm-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.2em;
+}
 
 #icons-light {
     font-size: large;
