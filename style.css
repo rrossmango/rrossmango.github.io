@@ -86,7 +86,7 @@ p {
     background-color: #ffffff;
     padding: 1.2rem;
     margin: 0.5rem;
-    margin-left: 5%;
+    margin-left: 10rem;
     border: 1rem solid #ffffff;
     border-radius: 0.5rem;
 }
@@ -146,7 +146,6 @@ footer {
 
 .footer-section {
     background-color: #ffffff;
-    margin-left: 3%;
 }
 
 .footer-content {
