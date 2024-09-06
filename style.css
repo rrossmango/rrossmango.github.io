@@ -143,6 +143,10 @@ p {
     color: teal;
     text-decoration: underline;
 }
+
+.image-item{
+    margin-right: 2rem;
+}
 /* General - Footer */
 
 footer {
