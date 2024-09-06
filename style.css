@@ -26,7 +26,7 @@ body{
 ul{
     padding-inline-start: 0;
     list-style-position: inside;
-    margin-bottom: 0rem
+    margin-bottom: 0rem /*could be 0.1rem*/
 }
 
 li{
