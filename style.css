@@ -12,7 +12,6 @@
 
 html, body {
     overflow-x: hidden;
-    /*font-size: 16px*/
 }
 
 body{
@@ -31,7 +30,6 @@ ul{
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-
 }
 
 h1, h2, h3 {
@@ -39,26 +37,39 @@ h1, h2, h3 {
     color: var(--wm-colours-dark);
 }
 
-h2 {
+h2 {    /*For landing page*/
     margin-top: 1rem;
-    font-size: 4rem;
     margin-bottom: 1.25rem;
+
+    font-size: 4rem;
 }
 
 
-h3 {
-    font-size: 2rem;
+h3 {    /*For landing page*/
     margin-top: 2rem;
     margin-bottom: 0.2rem;
+
+    font-size: 2rem;
 }
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
 
 p {
     padding: .5rem;
     font-size: 1rem;
     letter-spacing: 0.01rem; 
   }
+
+/*Indents*/
   
-.homepage-indented {
+.homepage-indented {    /*For landing page*/
     text-indent: 2em;
     margin-bottom: 1rem;
 }
@@ -67,9 +78,7 @@ p {
     text-indent: 2em;
 }
 
-.profile {
-    border-radius:20px;
-}
+/*Sections*/
 
 .reframe {
     height: 15rem;
@@ -99,7 +108,17 @@ p {
     gap: 1rem
 }
 
-/* General - Navigation*/
+.image-item{
+    margin-right: 2rem;
+    border-radius: 5rem;
+}
+
+.engineering-section {
+    margin-top: 1rem;
+    margin-left: 2rem
+}
+
+/*Navigation*/
 
 .nav {
     display: flex;
@@ -142,10 +161,7 @@ p {
     text-decoration: underline;
 }
 
-.image-item{
-    margin-right: 2rem;
-}
-/* General - Footer */
+/*Footer*/
 
 footer {
     background-color: var(--wm-colours-dark);
@@ -153,6 +169,7 @@ footer {
 
 .footer-section {
     background-color: #ffffff;
+    margin-left: 1.2rem;
 }
 
 .footer-content {
