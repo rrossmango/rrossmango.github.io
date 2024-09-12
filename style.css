@@ -113,7 +113,7 @@ p {
     border-radius: 5rem;
 }
 
-.engineering-section {
+.container {
     margin-top: 1rem;
     margin-left: 2rem
 }
@@ -203,7 +203,7 @@ footer {
     justify-content: flex-start;
     list-style-type: none;
     padding: 1rem;
-    margin: 1rem;
+    margin: 5rem;
     font-size: 1.2em;
 }
 
