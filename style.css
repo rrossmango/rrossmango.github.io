@@ -94,7 +94,7 @@ p {
 
 .wm-section { 
     background-color: #ffffff;
-    padding:5rem;
+    padding:1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     margin-left: 2rem;
@@ -117,11 +117,11 @@ p {
 }
 
 .container {
-    margin-top: 0.8rem;
+    margin-top: 0.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
 
-    padding: 1.2rem;
+    padding: 1rem;
 }
 
 /*Navigation*/
