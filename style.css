@@ -111,7 +111,7 @@ p {
     gap: 1rem
 }
 
-.image-item{
+.image-item{    /*Landing page*/
     margin-right: 2rem;
     border-radius: 5rem;
 }
@@ -121,7 +121,7 @@ p {
     margin-left: 2rem;
     margin-right: 2rem;
 
-    padding: 1rem;
+    padding: 0.8rem;
 }
 
 /*Navigation*/
