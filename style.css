@@ -73,7 +73,7 @@ p {
 /*Indents*/
   
 .homepage-indented {    /*For landing page*/
-    text-indent: 2em;
+    text-indent: 1.5em;
     margin-bottom: 1rem;
 }
 
@@ -112,6 +112,7 @@ p {
 }
 
 .image-item{    /*Landing page*/
+    margin-top: 1rem;
     margin-right: 2rem;
     border-radius: 5rem;
 }
