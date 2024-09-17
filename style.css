@@ -67,6 +67,7 @@ h6 {
 p {
     font-size: 1rem;
     letter-spacing: 0.1rem; 
+    margin: 0;
   }
 
 /*Indents*/
@@ -78,6 +79,7 @@ p {
 
 .indented {
     text-indent: 1.6em;
+    margin-bottom: .1rem;
 }
 
 /*Sections*/
