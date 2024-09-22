@@ -139,7 +139,7 @@ p {
     justify-content: flex-start;
     align-items: center;*/
     min-height: 8vh;
-	z-index: 4;
+	z-index: 1000;
 }
 
 .nav-list{
