@@ -133,13 +133,13 @@ p {
 /*Navigation*/
 
 .nav {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     min-height: 8vh;
 	z-index: 4;
-    position: fixed;
-    top: 0;
 }
 
 .nav-list{
