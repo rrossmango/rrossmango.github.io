@@ -100,7 +100,6 @@ p {
 .wm-section { 
     background-color: #ffffff;
     padding: 1rem;
-    padding-top: 8vh;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     margin-left: 2rem;
@@ -129,14 +128,11 @@ p {
     margin-right: 2rem;
 
     padding: 0.5rem;
-    padding-top: 8vh;
 }
 
 /*Navigation*/
 
 .nav {
-    position: fixed;
-    top: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
