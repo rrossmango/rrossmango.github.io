@@ -135,9 +135,9 @@ p {
 .nav {
     position: fixed;
     top: 0;
-    display: flex;
+    /*display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center;*/
     min-height: 8vh;
 	z-index: 4;
 }
