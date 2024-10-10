@@ -233,3 +233,33 @@ footer {
 .fab-light {
     color: var(--wm-colours-light)
 }
+
+/*Vertical Sidebar*/
+.vertical-sidebar {
+    height: 100%;
+    width: 250px; /* Sidebar width */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: silver;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+
+.vertical-sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+/* Change link color on hover */
+.vertical-sidebar a:hover {
+    color: #4ea6c9;
+}
+
+/* Style for the main content area */
+.blog-page {
+    margin-left: 260px; /* Push content to the right by the sidebar width */
+    padding: 20px;
+}
