@@ -237,19 +237,16 @@ footer {
 /*Vertical Sidebar*/
 .vertical-sidebar {
     height: 100%;
-    width: 250px; /* Sidebar width */
+    width: 15rem; /* Sidebar width */
     position: fixed; 
-    top: 0;
-    left: 0;
-    background-color: silver;
-    padding-top: 20px;
+    background-color: rgb(126, 187, 238);
     overflow-x: hidden;
 }
 
 .vertical-sidebar a {
-    padding: 15px 20px;
+    padding: 2rem 3rem;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 2rem;
     display: block;
 }
 
