@@ -239,14 +239,19 @@ footer {
     height: 100%;
     width: 15rem; /* Sidebar width */
     position: fixed; 
-    background-color: rgb(126, 187, 238);
+    background-color: rgb(178, 226, 235);
     overflow-x: hidden;
 }
 
-.vertical-sidebar a {
-    padding: 2rem 3rem;
+.sidebar-column {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 0.5rem;
+}
+
+.sidebar-item {
+    padding: 1rem;
     text-decoration: none;
-    font-size: 2rem;
     display: block;
 }
 
