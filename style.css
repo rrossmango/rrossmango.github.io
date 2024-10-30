@@ -264,6 +264,6 @@ footer {
 
 /* Style for the main content area */
 .blog-page {
-    margin-left: 260px; /* Push content to the right by the sidebar width */
+    margin-left: 30rem; /* Push content to the right by the sidebar width */
     padding: 20px;
 }
