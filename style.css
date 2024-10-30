@@ -237,11 +237,12 @@ footer {
 /*Vertical Sidebar*/
 .vertical-sidebar {
     height: 100%;
-    width: 15rem; /* Sidebar width */
-    left: 5rem;
+    width: 25rem; /* Sidebar width */
+    left: 3rem;
     position: fixed; 
     background-color: rgb(178, 226, 235);
     overflow-x: hidden;
+    border-radius: 2.5rem;
 }
 
 .sidebar-column {
@@ -251,7 +252,7 @@ footer {
 }
 
 .sidebar-item {
-    padding: 1rem;
+    padding: 0.5rem;
     text-decoration: none;
     display: block;
 }
