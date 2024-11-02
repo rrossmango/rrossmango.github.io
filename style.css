@@ -236,7 +236,6 @@ footer {
 
 /*Vertical Sidebar*/
 .vertical-sidebar {
-    height: 100%;
     width: 25rem; /* Sidebar width */
     left: 3rem;
     position: fixed; 
