@@ -238,7 +238,7 @@ footer {
     transition: opacity 0.3s;
   }
   
-  .icon-hoverable:hover .tooltip-text {
+.icon-hoverable:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
   }
