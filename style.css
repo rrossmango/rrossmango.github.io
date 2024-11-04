@@ -214,6 +214,35 @@ footer {
     margin-right: 0;
 }
 
+.icon-hover {
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.icon-container .tooltip-text {
+    visibility: hidden;
+    width: 1rem;
+    background-color: teal;
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .icon-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
 .wm-icon {
     display: flex;
     flex-direction: row;
