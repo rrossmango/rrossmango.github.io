@@ -214,15 +214,15 @@ footer {
     margin-right: 0;
 }
 
-.icon-hover {
+.icon-hoverable {
     position: relative;
     display: inline-block;
     margin-right: 1rem;
 }
 
-.icon-container .tooltip-text {
+.icon-hoverable .tooltip-text {
     visibility: hidden;
-    width: 1rem;
+    width: 0.8rem;
     background-color: teal;
     color: black;
     text-align: center;
@@ -238,7 +238,7 @@ footer {
     transition: opacity 0.3s;
   }
   
-  .icon-container:hover .tooltip-text {
+  .icon-hoverable:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
   }
