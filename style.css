@@ -207,6 +207,8 @@ footer {
 }
 
 .icon-item{
+    position: relative;
+    display: inline-block;
     margin-right: 1rem;
 }
 
