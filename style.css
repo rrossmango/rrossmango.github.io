@@ -231,7 +231,7 @@ footer {
 .icon-hoverable .tooltip-text {
     visibility: hidden;
     width: 0.8rem;
-    background-color: teal;
+    background-color: rgb(136, 240, 240);
     color: black;
     text-align: center;
     padding: 0.5rem;
