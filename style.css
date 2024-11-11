@@ -37,7 +37,7 @@ h1, h2, h3 {
     color: var(--wm-colours-dark);
 }
 
-h2 {    /*For landing page*/
+h2 {
     margin-top: 1rem;
     margin-bottom: 1.25rem;
 
@@ -45,7 +45,7 @@ h2 {    /*For landing page*/
 }
 
 
-h3 {    /*For landing page*/
+h3 {
     margin-top: 2rem;
     margin-bottom: 0.2rem;
 
@@ -67,6 +67,7 @@ h6 {
 p {
     font-size: 1rem;
     margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
   }
 
 .date {
