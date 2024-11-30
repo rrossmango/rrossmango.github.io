@@ -139,6 +139,21 @@ ul li{
     z-index: 1;
 }
 
+.image-square {
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden; /* Ensure cropped parts are hidden */
+    display: inline-block; /* Or flex/grid item */
+    margin: 1rem;
+    border-radius: 1rem;
+}
+  
+  .image-square img {
+    width: 100%; /* Make the image as wide as the container */
+    height: 100%; /* Make the image as tall as the container */
+    object-fit: cover; /* Crop and scale the image */
+}
+
 /*Navigation*/
 
 .nav {
