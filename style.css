@@ -148,7 +148,7 @@ ul li{
     border-radius: 1rem;
 }
   
-  .image-square img {
+.image-square img {
     width: 100%; /* Make the image as wide as the container */
     height: 100%; /* Make the image as tall as the container */
     object-fit: cover; /* Crop and scale the image */
