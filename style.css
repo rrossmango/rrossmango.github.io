@@ -140,19 +140,25 @@ ul li{
 }
 
 .image-square {
-    width: 10rem;
-    height: 10rem;
-    overflow: hidden; /* Ensure cropped parts are hidden */
-    display: inline-block; /* Or flex/grid item */
+    width: 15rem;
+    height: auto;
+    overflow: hidden; 
+    display: inline-block; 
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
   
 .image-square img {
-    width: 100%; /* Make the image as wide as the container */
-    height: 100%; /* Make the image as tall as the container */
-    object-fit: cover; /* Crop and scale the image */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
 
 /*Navigation*/
 
