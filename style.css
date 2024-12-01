@@ -145,7 +145,7 @@ ul li{
     overflow: hidden; /* Ensure cropped parts are hidden */
     display: inline-block; /* Or flex/grid item */
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
 }
   
 .image-square img {
