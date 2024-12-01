@@ -133,22 +133,23 @@ ul li{
     margin-top: 0rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-bottom: 0rem;
 
     padding: 0.5rem;
     /*padding-top: 4vh*/
     z-index: 1;
 }
 
-.image-square {
-    width: 10rem;
-    height: 10rem;
+.image-box {
+    width: auto;
+    height: 12.5rem;
     overflow: hidden; /* Ensure cropped parts are hidden */
     display: inline-block; /* Or flex/grid item */
-    margin: 1rem;
+    margin: 0.2rem;
     border-radius: .5rem;
 }
   
-.image-square img {
+.image-box img {
     width: 100%; /* Make the image as wide as the container */
     height: 100%; /* Make the image as tall as the container */
     object-fit: cover; /* Crop and scale the image */
