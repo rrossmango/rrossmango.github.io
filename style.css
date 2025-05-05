@@ -83,12 +83,12 @@ ul li{
 /*Indents*/
   
 .homepage-indented {
-    text-indent: 0rem;
+    text-indent: 1em;
     margin-bottom: 1rem;
 }
 
 .indented {
-    text-indent: 1.6em;
+    text-indent: 1em;
     margin-top: .2rem;
     margin-bottom: .2rem;
 }
