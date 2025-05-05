@@ -83,7 +83,7 @@ ul li{
 /*Indents*/
   
 .homepage-indented {
-    text-indent: 1rem;
+    text-indent: 0rem;
     margin-bottom: 1rem;
 }
 
@@ -238,7 +238,7 @@ footer {
 }
 
 .footer-content {
-    padding: 1em 0.5em;
+    padding: 2.5rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
