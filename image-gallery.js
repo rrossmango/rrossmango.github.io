@@ -2,16 +2,22 @@
 let scrollIndex = 0;
 
 function scrollCarousel(direction) {
+  const trackWrapper = document.querySelector('.carousel-track-wrapper');
   const track = document.querySelector('.carousel-track');
   const images = track.querySelectorAll('img');
-  const visibleCount = getVisibleCount();
-  const maxIndex = images.length - visibleCount;
 
-  scrollIndex += direction;
-  scrollIndex = Math.max(0, Math.min(scrollIndex, maxIndex));
+  if (images.length === 0) return;
 
-  const scrollAmount = images[0].offsetWidth + 16; // image width + gap
-  track.style.transform = `translateX(-${scrollIndex * scrollAmount}px)`;
+  const imageWidth = images[0].offsetWidth + 16; // account for gap
+  const wrapperWidth = trackWrapper.offsetWidth;
+  const imagesPerView = Math.floor(wrapperWidth / imageWidth);
+
+  const scrollAmount = imageWidth * imagesPerView;
+
+  trackWrapper.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
+  });
 }
 
 function getVisibleCount() {
