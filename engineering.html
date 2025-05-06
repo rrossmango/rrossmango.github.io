@@ -32,6 +32,8 @@
         </script>
     </head>
 
+    <script src="image-gallery.js"></script>
+
     <body> 
         <header>
             <nav class="nav">
@@ -122,10 +124,28 @@
                 </li>
 
             </ul>
-            <section>
-                <div class="image-box"><img src="images/8MP_1233.JPEG" alt="Me with It's a Small World"></div>
-                <div class="image-box"><img src="images/IMG_2260.JPG" alt="Me with It's a Small World"></div>
-            </section>
+
+            <div class="carousel-container">
+                <button class="arrow left" onclick="scrollCarousel(-1)">❮</button>
+                <div class="carousel-track-wrapper">
+                  <div class="carousel-track">
+                    <img src="work_images\accelerator\hack_makerspace2.jpg" alt="Image 1">
+                    <img src="work_images\accelerator\custom-servo-mount.png" alt="Image 2">
+                    <img src="work_images\accelerator\hack_car4.png" alt="Image 3">
+                    <img src="work_images\accelerator\hack_makerspace.jpg" alt="Image 4">
+                    <img src="work_images\accelerator\hack_tier1_ckt.png" alt="Image 5">
+                    <img src="work_images\accelerator\hack_tier2_ckt.png" alt="Image 6">
+                    <img src="work_images\accelerator\hack_tier3_ckt.png" alt="Image 7">
+                    <img src="work_images\accelerator\IMG_3644.jpg" alt="Image 8">
+                    <img src="work_images\accelerator\IMG_3656_edited.jpg" alt="Image 9">
+                    <img src="work_images\accelerator\IMG_3676.jpg" alt="Image 10">
+                    <img src="work_images\accelerator\IMG_3712.jpg" alt="Image 11">
+                    <img src="work_images\accelerator\IMG_3720.jpg" alt="Image 12">
+                    <img src="work_images\accelerator\IMG_3858.jpg" alt="3D-printed handheld controller">
+                  </div>
+                </div>
+                <button class="arrow right" onclick="scrollCarousel(1)">❯</button>
+            </div>
         </section>
 
         <section class="container" id="portfolio-section">
