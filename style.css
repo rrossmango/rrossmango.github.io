@@ -204,12 +204,19 @@ ul li{
   
   .carousel-track img {
     flex: 0 0 auto;
-    width: 18%;
+    width: 30%;
     height: 150px;
     object-fit: contain;
     border-radius: 8px;
   }
   
+  .rotated {
+    display: block;
+    margin: 0 auto;
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+
   /* Arrows */
   .arrow {
     background: none;
