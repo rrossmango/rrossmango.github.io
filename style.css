@@ -204,9 +204,9 @@ ul li{
   
   .carousel-track img {
     flex: 0 0 auto;
-    width: 100%;
-    max-width: 18%;
-    height: auto;
+    width: 18%;
+    height: 150px;
+    object-fit: contain;
     border-radius: 8px;
   }
   
