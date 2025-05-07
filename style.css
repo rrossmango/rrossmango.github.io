@@ -204,8 +204,8 @@ ul li{
   
   .carousel-track img {
     flex: 0 0 auto;
-    width: 18%;
-    height: 150px;
+    height: auto; /*175px*/
+    width: 250px;    /*auto*/
     object-fit: contain;
     border-radius: 8px;
   }
@@ -217,7 +217,7 @@ ul li{
     transform-origin: center;
   }
 
-  /* Arrows */
+  /* Arrows for Scrolling */
   .arrow {
     background: none;
     border: none;
@@ -237,6 +237,32 @@ ul li{
     .carousel-track img {
       max-width: 45%;
     }
+  }
+
+/* Video Gallery */
+.video-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* in case screen is too small */
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .video-wrapper {
+    flex: 1 1 30%;      /* 3 videos per row, fluid */
+    min-width: 200px;
+    max-width: 33.3%;   /* ensures 3 across if space allows */
+    height: 300px;
+    position: relative;
+  }
+  
+  .video-wrapper video,
+  .video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
   }
 
 /*Navigation*/
