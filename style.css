@@ -204,18 +204,11 @@ ul li{
   
   .carousel-track img {
     flex: 0 0 auto;
-    height: 200px;           /* Adjust as needed */
+    height: 175px;           /* Adjust as needed */
     width: auto;
     object-fit: cover;       /* Or 'contain' if you want full view */
     border-radius: 8px;
     display: block;
-  }
-  
-  .rotated {
-    display: block;
-    margin: 0 auto;
-    transform: rotate(-90deg);
-    transform-origin: center;
   }
 
   /* Arrows for Scrolling */
