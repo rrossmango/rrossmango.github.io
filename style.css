@@ -240,8 +240,8 @@ ul li{
   }
   
   .masonry-gallery img {
-    /* width: 150px;   100% */
-     height: auto;
+    width: 150px;   /*100%*/
+    height: auto;
     display: block;
     margin-bottom: 1rem;
     border-radius: 8px;
