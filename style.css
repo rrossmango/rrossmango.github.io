@@ -240,8 +240,8 @@ ul li{
   }
   
   .masonry-gallery img {
-    width: 100%;
-    height: auto;
+    /* width: 150px;   100% */
+     height: auto;
     display: block;
     margin-bottom: 1rem;
     border-radius: 8px;
@@ -268,50 +268,24 @@ ul li{
   }
 
 /* Video Gallery */
-/* .video-row {         Led to 4 videos of equal height, 250px wide
+.video-row {      
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     justify-content: center;
     align-items: stretch;
-  } */
-
-  .video-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: stretch;
   }
   
-  /* .video-wrapper {
+  .video-wrapper {
     height: 300px;
     position: relative;
   }
   
-  .video-wrapper video,     Led to 4 videos of equal height, 250px wide
+  .video-wrapper video,   
   .video-wrapper iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    display: block;
-  } */
-
-  .video-wrapper {
-    flex: 1 1 30%;
-    min-width: 250px;
-    max-width: 33.3%;
-    height: 300px;
-    position: relative;
-  }
-  
-  .video-wrapper video,
-  .video-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
     border-radius: 8px;
     display: block;
   }
