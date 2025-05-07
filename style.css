@@ -247,7 +247,7 @@ ul li{
   }
   
   .masonry-gallery img {
-    width: 100%;
+    width: 50%;
     height: auto;
     display: block;
     margin-bottom: 1rem;
@@ -271,7 +271,7 @@ ul li{
 /* Video Gallery */
 .video-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     justify-content: center;
     align-items: stretch;
