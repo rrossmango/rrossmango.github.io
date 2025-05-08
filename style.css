@@ -193,7 +193,7 @@ ul li{
   .carousel-track-wrapper {
     overflow-x: auto;
     flex: 1;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
   }
   
   .carousel-track {
@@ -271,9 +271,10 @@ ul li{
 .video-row {      
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20rem;
+    gap: 8rem;
     justify-content: center;
     align-items: stretch;
+    padding: 5rem;
   }
   
   .video-wrapper {
