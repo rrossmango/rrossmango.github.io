@@ -7,17 +7,31 @@ function scrollCarousel(direction) {
   const imgs    = Array.from(track.querySelectorAll('img'));
   if (!imgs.length) return;
 
-  // read the gap value from your CSS (in pixels)
-  const gap = parseFloat(getComputedStyle(track).getPropertyValue('gap'));
+  // pixel size of one “slot” = image width + gap
+  const gap       = parseFloat(getComputedStyle(track).getPropertyValue('gap'));
+  const slotWidth = imgs[0].offsetWidth + gap;
 
-  // calculate one-step scroll: image width + gap
-  const scrollAmount = imgs[0].offsetWidth + gap;
+  // how many slots fit fully into the wrapper
+  const itemsPerPage = Math.floor(wrapper.offsetWidth / slotWidth);
+  if (itemsPerPage < 1) return;
 
-  wrapper.scrollBy({ 
-    left: direction * scrollAmount, 
-    behavior: 'smooth' 
+  // scroll by exactly one “page” of items
+  const scrollAmount = slotWidth * itemsPerPage;
+
+  wrapper.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
   });
 }
+
+function getVisibleCount() {
+  const screenWidth = window.innerWidth;
+  if (screenWidth < 500) return 2;
+  if (screenWidth < 800) return 3;
+  return 5;
+}
+
+window.addEventListener('resize', () => scrollCarousel(0)); // reset transform on resize
 
 // function scrollCarousel(direction) {
 //   const trackWrapper = document.querySelector('.carousel-track-wrapper');
@@ -37,12 +51,3 @@ function scrollCarousel(direction) {
 //     behavior: 'smooth'
 //   });
 // }
-
-function getVisibleCount() {
-  const screenWidth = window.innerWidth;
-  if (screenWidth < 500) return 2;
-  if (screenWidth < 800) return 3;
-  return 5;
-}
-
-window.addEventListener('resize', () => scrollCarousel(0)); // reset transform on resize
