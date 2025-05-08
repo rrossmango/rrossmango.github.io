@@ -204,7 +204,7 @@ ul li{
   
   .carousel-track img {
     flex: 0 0 auto;
-    height: 200px;           /* Adjust as needed */
+    height: 225px;           /* Adjust as needed */
     width: auto;
     object-fit: cover;       /* Or 'contain' if cropped, 'cover' is fit natural */
     border-radius: 8px;
@@ -278,7 +278,7 @@ ul li{
   }
   
   .video-wrapper {
-    height: 400px;    /* Can change this one, height of boxes*/
+    height: 350px;    /* Can change this one, height of boxes, was 400*/
     position: relative;
   }
   
