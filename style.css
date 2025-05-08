@@ -276,13 +276,8 @@ ul li{
     align-items: stretch;
   }
   
-  .video-wrapper-landscape {
-    height: 300px;
-    position: relative;
-  }
-
-  .video-wrapper-portrait {
-    height: 500px;
+  .video-wrapper {
+    height: 400px;
     position: relative;
   }
   
