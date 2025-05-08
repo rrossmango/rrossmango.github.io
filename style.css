@@ -271,7 +271,7 @@ ul li{
 .video-row {      
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 20rem;
     justify-content: center;
     align-items: stretch;
   }
