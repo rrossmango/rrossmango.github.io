@@ -279,7 +279,7 @@ ul li{
   
   .video-wrapper {
     height: 350px;    /* Can change this one, height of boxes, was 400*/
-    position: relative;
+    position: relative; 
   }
   
   .video-wrapper video,   
