@@ -1,0 +1,13 @@
+# Large files
+*.mp4
+*.mov
+*.zip
+*.blend
+*.obj
+
+# Thumbnails and other auto-generated stuff
+thumbnails/
+screenshots/
+
+# GitHub Pages build folders
+_site/

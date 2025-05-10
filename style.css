@@ -184,7 +184,7 @@ ul li{
 
 .carousel-container {
     display: flex;
-    align-items: center;
+    align-items: left;
     overflow: hidden;
     width: 100%;
     padding: 1rem 0;
@@ -272,7 +272,7 @@ ul li{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Can change this one, was 200px*/
     gap: 3rem;    /* Can change this one, sizing between columns*/
-    justify-content: center;
+    justify-content: left;
     align-items: stretch;
     padding: 1rem 5rem;   /* Can change this one, for margin on videos*/
   }
@@ -460,6 +460,10 @@ footer {
 .blog-page { /* Style for the main content area */
     margin-left: 30rem; /* Push content to the right by the sidebar width */
     padding: 20px;
+}
+
+dl dt{
+  padding: 0.5rem 0;
 }
 
 /* Fun font animations */
