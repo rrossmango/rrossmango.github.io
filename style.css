@@ -292,7 +292,7 @@ ul li{
     object-fit: cover;
     border-radius: 8px;
     display: block;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
   }
 
   .video-wrapper figcaption {
