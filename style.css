@@ -270,7 +270,7 @@ ul li{
 /* Video Gallery */
 .video-row {      
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Can change this one, was 150px*/
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Can change this one, was 150px*/
     gap: 3rem;    /* Can change this one, sizing between columns*/
     justify-content: center;
     align-items: normal; /* was stretch */
@@ -298,6 +298,7 @@ ul li{
   .video-wrapper figcaption {
     flex: 0 0 auto; /* no flex, so it doesn't grow or shrink */
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
     font-size: 0.9rem;
     text-align: center;
     color: #555;
