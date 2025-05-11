@@ -285,21 +285,23 @@ ul li{
   }
   
   .video-wrapper video,   
-  .video-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-  }
-  
+  .video-wrapper iframe,
   .video-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
     display: block;
-    flex: 1 0 auto; /* Added for gif captions. 1 1 auto looked nice */ 
+    flex: 1 0 auto;
+  }
+
+  .no-crop-wrapper {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    flex: 1 0 auto;
   }
 
   .video-wrapper figcaption {
