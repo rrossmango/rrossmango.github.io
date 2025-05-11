@@ -303,6 +303,7 @@ ul li{
   }
 
   .video-wrapper figcaption {
+    flex: 0 0 auto; /* no flex, so it doesn't grow or shrink */
     margin-top: 0.5rem;
     font-size: 0.9rem;
     text-align: center;
