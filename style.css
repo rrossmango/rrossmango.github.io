@@ -184,7 +184,7 @@ ul li{
 
 .carousel-container {
     display: flex;
-    align-items: left;
+    align-items: center;
     overflow: hidden;
     width: 100%;
     padding: 1rem 0;
@@ -272,7 +272,7 @@ ul li{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Can change this one, was 150px*/
     gap: 3rem;    /* Can change this one, sizing between columns*/
-    justify-content: left;
+    justify-content: center;
     align-items: stretch;
     /* padding: 1rem 5rem;   Can change this one, for margin on videos */
   }
@@ -299,7 +299,7 @@ ul li{
     object-fit: cover;
     border-radius: 8px;
     display: block;
-    flex: 1 1 auto; /* Added for gif captions */
+    flex: 1 0 auto; /* Added for gif captions. 1 1 auto looked nice */ 
   }
 
   .video-wrapper figcaption {
