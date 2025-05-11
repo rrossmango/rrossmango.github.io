@@ -289,23 +289,17 @@ ul li{
   .video-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 8px;
     display: block;
     flex: 1 0 auto;
   }
 
-  .no-crop-wrapper {
-    height: 350px;    /* Can change this one, height of boxes, was 400*/
-    position: relative; 
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+  .crop {
+    object-fit: cover;
+  }
+
+  .no-crop {
     object-fit: contain;
-    border-radius: 8px;
-    display: block;
-    flex: 1 0 auto;
   }
 
   .video-wrapper figcaption {
