@@ -274,7 +274,7 @@ ul li{
     gap: 3rem;    /* Can change this one, sizing between columns*/
     justify-content: left;
     align-items: stretch;
-    padding: 1rem 5rem;   /* Can change this one, for margin on videos*/
+    /* padding: 1rem 5rem;   Can change this one, for margin on videos */
   }
   
   .video-wrapper {
