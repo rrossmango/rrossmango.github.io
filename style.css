@@ -269,8 +269,9 @@ ul li{
 
 /* Video Gallery */
 .video-row {      
+    margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Can change this one, was 250px*/
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Can change this one, was 250px*/
     gap: 3rem;    /* Can change this one, sizing between columns*/
     justify-content: left;
     /* align-items: normal; was stretch */
@@ -302,7 +303,7 @@ ul li{
     border-radius: 8px;
     display: block;
     flex-shrink: 0; /* No shrink whatsoever */
-    /* flex: 1 1 auto; */ /* Grows to fill the space, or shrink if needed if the caption grows"
+    /* flex: 1 1 auto; */ /* Grows to fill the space, or shrink if needed if the caption grows" */
   }
 
   .video-wrapper figcaption {
