@@ -270,16 +270,16 @@ ul li{
 /* Video Gallery */
 .video-row {      
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Can change this one, was 150px*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Can change this one, was 150px*/
     gap: 3rem;    /* Can change this one, sizing between columns*/
-    justify-content: center;
-    align-items: normal; /* was stretch */
+    justify-content: left;
+    /* align-items: normal; was stretch */
     /* padding: 1rem 5rem;   Can change this one, for margin on videos */
   }
   
   .video-wrapper {
-    height: 350px;    /* Can change this one, height of boxes, was 400*/
-    position: relative; 
+    /* height: 350px;    Can change this one, height of boxes, was 400 */
+    /* position: relative;  */
     display: flex;
     flex-direction: column;
   }
@@ -288,17 +288,17 @@ ul li{
   .video-wrapper iframe,
   .video-wrapper img {
     width: 100%;
-    height: 100%;
+    height: 350px;
     object-fit: cover;
     border-radius: 8px;
     display: block;
-    flex: 1 0 auto;
+    flex-shrink: 0;
   }
 
   .video-wrapper figcaption {
-    flex: 0 0 auto; /* no flex, so it doesn't grow or shrink */
+    /* flex: 0 0 auto; no flex, so it doesn't grow or shrink */
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     font-size: 0.9rem;
     text-align: center;
     color: #555;
