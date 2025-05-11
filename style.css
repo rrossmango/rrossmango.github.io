@@ -206,7 +206,7 @@ ul li{
     flex: 0 0 auto;
     height: 225px;           /* Adjust as needed */
     width: auto;
-    object-fit: cover;       /* Or 'contain' if cropped, 'cover' is fit natural */
+    object-fit: cover;     
     border-radius: 8px;
     display: block;
   }
@@ -270,7 +270,7 @@ ul li{
 /* Video Gallery */
 .video-row {      
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Can change this one, was 150px*/
+    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr)); /* Can change this one, was 250px*/
     gap: 3rem;    /* Can change this one, sizing between columns*/
     justify-content: left;
     /* align-items: normal; was stretch */
@@ -297,13 +297,11 @@ ul li{
   .video-wrapper img {
     width: 100%;
     height: 350px;
-    object-fit: contain;
+    object-fit: scale-up;
     border-radius: 8px;
     display: block;
     flex-shrink: 0;
   }
-
-  /* Try landscape gifs to be contain instead */
 
   .video-wrapper figcaption {
     /* flex: 0 0 auto; no flex, so it doesn't grow or shrink */
@@ -479,6 +477,66 @@ footer {
 
 dl dt{
   padding: 0.5rem 0;
+}
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;               /* hidden until you click */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.lightbox-inner {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 4px;
+}
+
+.lightbox-inner figcaption {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 10001;
+}
+.lightbox-close {
+  top: 1rem;
+  right: 1.5rem;
+}
+.lightbox-prev {
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lightbox-next {
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Fun font animations */

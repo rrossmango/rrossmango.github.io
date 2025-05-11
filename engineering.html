@@ -47,6 +47,11 @@
             </nav>
         </header>
 
+        <!-- click image/video overlay -->
+        <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+
         <section class="container">
             <h4> experience! (scroll as you please)</h4>
             <hr>
@@ -145,7 +150,7 @@
                     built a makeshift eel with two Bevel gearboxes, welded sheet metal, stepper motors, and 3D-printed parts
                 </li>
                 <li class="indented">
-                    ran a propulsion test in a water tank using a strain gauge load cell, coil spring, Teensy, with said prototype
+                    ran a propulsion test in a water tank using a strain gauge load cell, coil spring, and Teensy, with said prototype
                 </li>
             </ul>
 
@@ -289,6 +294,13 @@
             <p>sept 2019 - march 2020</p>
 
         </section>
+
+        <div id="lightbox" class="lightbox-overlay">
+            <button class="lightbox-close" aria-label="Close">&times;</button>
+            <button class="lightbox-prev" aria-label="Previous">&#10094;</button>
+            <div id="lightbox-inner" class="lightbox-inner"></div>
+            <button class="lightbox-next" aria-label="Next">&#10095;</button>
+        </div>
 
     </body>
 
