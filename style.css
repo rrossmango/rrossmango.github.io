@@ -280,6 +280,8 @@ ul li{
   .video-wrapper {
     height: 350px;    /* Can change this one, height of boxes, was 400*/
     position: relative; 
+    display: flex;
+    flex-direction: column;
   }
   
   .video-wrapper video,   
@@ -297,6 +299,14 @@ ul li{
     object-fit: contain;
     border-radius: 8px;
     display: block;
+    flex: 1 0 auto; /* Added for gif captions */
+  }
+
+  .video-wrapper figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #555;
   }
 
 /*Navigation*/
