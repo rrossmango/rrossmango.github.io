@@ -292,14 +292,14 @@ ul li{
     border-radius: 8px;
     display: block;
   }
-
+  
   .video-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 8px;
     display: block;
-    flex: 1 0 auto; /* Added for gif captions */
+    flex: 1 1 auto; /* Added for gif captions */
   }
 
   .video-wrapper figcaption {
