@@ -285,8 +285,7 @@ ul li{
   }
   
   .video-wrapper video,   
-  .video-wrapper iframe,
-  .video-wrapper img {
+  .video-wrapper iframe {
     width: 100%;
     height: 350px;
     object-fit: cover;
@@ -294,6 +293,17 @@ ul li{
     display: block;
     flex-shrink: 0;
   }
+
+  .video-wrapper img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  /* Try landscape gifs to be contain instead */
 
   .video-wrapper figcaption {
     /* flex: 0 0 auto; no flex, so it doesn't grow or shrink */
