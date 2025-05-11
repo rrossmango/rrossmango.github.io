@@ -270,7 +270,7 @@ ul li{
 /* Video Gallery */
 .video-row {      
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Can change this one, was 200px*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Can change this one, was 150px*/
     gap: 3rem;    /* Can change this one, sizing between columns*/
     justify-content: left;
     align-items: stretch;
