@@ -289,19 +289,10 @@ ul li{
   .video-wrapper img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 8px;
     display: block;
-    flex: 1 0 auto;
-  }
-
-  .crop video,
-  .crop img {
-    object-fit: cover;
-  }
-
-  .no-crop video,
-  .no-crop img {
-    object-fit: contain;
+    flex: 1 1 auto;
   }
 
   .video-wrapper figcaption {
