@@ -294,11 +294,13 @@ ul li{
     flex: 1 0 auto;
   }
 
-  .crop {
+  .crop video,
+  .crop img {
     object-fit: cover;
   }
 
-  .no-crop {
+  .no-crop video,
+  .no-crop img {
     object-fit: contain;
   }
 
