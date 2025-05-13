@@ -189,6 +189,10 @@ ul li{
     width: 100%;
     padding: 1rem 0;
   }
+
+  .carousel-container.centered {  
+  justify-content: center;       /* when you add this class, the track sits in the middle */
+}
   
   .carousel-track-wrapper {
     overflow-x: auto; /* Can make it hidden to block the scroll wheel */
@@ -295,7 +299,7 @@ ul li{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Can change this one, was 250px*/
     gap: 3rem;    /* Can change this one, sizing between columns*/
-    justify-content: left;
+    justify-content: center;
     /* align-items: normal; was stretch */
     /* padding: 1rem 5rem;   Can change this one, for margin on videos */
   }
@@ -305,6 +309,7 @@ ul li{
     /* position: relative;  */
     display: flex;
     flex-direction: column;
+    max-width: 300px;
   }
   
   .video-wrapper video,   
