@@ -277,7 +277,7 @@ ul li{
 
 .gif-tile img {
   flex-direction: column;
-  width: 100%;
+  width: auto;
   height: 350px;
   border-radius: 8px;
 }

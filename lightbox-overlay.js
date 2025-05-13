@@ -1,5 +1,5 @@
 // open the lightbox with the clicked media’s src
-document.querySelectorAll('.video-wrapper img', '.gif-tile img', '.carousel-track img')
+document.querySelectorAll('.video-wrapper img, .gif-tile img, .carousel-track img')
   .forEach(el => {
     el.style.cursor = 'pointer';
     el.addEventListener('click', () => {
