@@ -275,18 +275,19 @@ ul li{
   gap: 3rem;    
 }
 
-.gif-tile {
+.gif-tile img {
+  flex-direction: column;
   width: 100%;
   height: 350px;
   border-radius: 8px;
 }
 
-  .gif-wrapper figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    text-align: center;
-    color: #555;
-  }
+.gif-tile figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #555;
+}
 
 .video-row {      
     margin-top: 1rem;
