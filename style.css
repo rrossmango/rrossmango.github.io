@@ -208,7 +208,8 @@ ul li{
     padding: 0 0.5rem;
   }
   
-  .carousel-track img {
+  .carousel-track img,
+  .carousel-track video {
     flex: 0 0 auto;
     height: 225px; /* Adjust as needed */
     width: auto;
@@ -325,7 +326,8 @@ ul li{
     /* flex: 1 1 auto; */ /* Grows to fill the space, or shrink if needed if the caption grows" */
   }
 
-  .video-wrapper-contain video {
+  .video-wrapper-contain video,
+  .video-wrapper-contain img {
     display: flex;
     flex-direction: column;
     max-width: 300px;
