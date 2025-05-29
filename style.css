@@ -94,7 +94,7 @@ ul li{
     margin-bottom: .2rem;
 }
 
-/*Sections*/
+/*Homepage, Old*/
 
 .wm-section { 
     background-color: #ffffff;
@@ -117,6 +117,46 @@ ul li{
     gap: 1rem
 }
 
+.image-item{    /*Landing page*/
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border-radius: 5rem;
+}
+
+.image-box {
+    width: auto;
+    height: 12.5rem;
+    overflow: hidden; /* Ensure cropped parts are hidden */
+    display: inline-block; /* Or flex/grid item */
+    margin: 0.2rem;
+    border-radius: .5rem;
+}
+  
+.image-box img {
+    width: 100%; /* Make the image as wide as the container */
+    height: 100%; /* Make the image as tall as the container */
+    object-fit: cover; /* Crop and scale the image */
+}
+
+/* Homepage, New */
+.hp-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;              /* space between columns */
+  margin: 1rem;           /* optional outer margin */
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.text-column,
+.image-column {
+  flex: 1 1 300px;        /* grow, shrink, min-width 300px */
+}
+
 .image-column {
     display: flex;
     flex-direction: column;
@@ -130,6 +170,142 @@ ul li{
     object-fit: cover;
     border-radius: 2rem; 
 }
+
+/*Navigation*/
+
+.nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgb(233, 233, 233);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 8vh;
+	  z-index: 1000;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    list-style-type: none;
+    padding: 1rem;
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.2em;
+}
+
+.nav-item{
+    margin-right: 4rem;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    color:black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: teal;
+    text-decoration: underline;
+}
+
+/*Footer*/
+
+footer {
+    background-color: var(--wm-colours-dark);
+}
+
+.footer-section {
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.footer-content {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+} 
+
+.footer-content h2{
+    color: var(--wm-colours-light);
+}
+
+.footer-content p{
+    color: var(--wm-colours-light);
+    
+}
+
+.icon-item{
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.icon-item:last-child {
+    margin-right: 0;
+}
+
+.icon-hoverable {
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.icon-hoverable .tooltip-text {
+    visibility: hidden;
+    background-color: rgb(136, 240, 240);
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+.icon-hoverable:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 1rem;
+    margin: 1.2rem;
+    font-size: 1.2em;
+}
+
+#icons-light {
+    font-size: large;
+    z-index: 4;
+}
+
+.fab-light {
+    color: var(--wm-colours-light)
+}
+
+/* Page Containers */
 
 @media (min-width: 900px) {
     .container {
@@ -149,12 +325,6 @@ ul li{
     }
   }
 
-.image-item{    /*Landing page*/
-    margin-top: 1rem;
-    margin-right: 2rem;
-    border-radius: 5rem;
-}
-
 .container {
     margin-top: 0rem;
     margin-left: 2rem;
@@ -164,21 +334,6 @@ ul li{
     padding: 0.5rem;
     /*padding-top: 4vh*/
     z-index: 1;
-}
-
-.image-box {
-    width: auto;
-    height: 12.5rem;
-    overflow: hidden; /* Ensure cropped parts are hidden */
-    display: inline-block; /* Or flex/grid item */
-    margin: 0.2rem;
-    border-radius: .5rem;
-}
-  
-.image-box img {
-    width: 100%; /* Make the image as wide as the container */
-    height: 100%; /* Make the image as tall as the container */
-    object-fit: cover; /* Crop and scale the image */
 }
 
 /*Image Gallery*/
@@ -361,177 +516,7 @@ ul li{
     color: #555;
   }
 
-/*Navigation*/
-
-.nav {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color:white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 8vh;
-	  z-index: 1000;
-}
-
-.nav-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    /* align-items: center;
-    justify-content: flex-start; */
-    list-style-type: none;
-    padding: 1rem;
-    margin-top: 1.2rem;
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
-    margin-bottom: 0.8rem;
-    font-size: 1.2em;
-}
-
-.nav-item{
-    margin-right: 4rem;
-}
-
-.nav-item:last-child {
-    margin-right: 0;
-}
-
-.nav-link {
-    color:black;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: teal;
-    text-decoration: underline;
-}
-
-/*Footer*/
-
-footer {
-    background-color: var(--wm-colours-dark);
-}
-
-.footer-section {
-    background-color: #ffffff;
-    z-index: 1;
-}
-
-.footer-content {
-    padding: 2.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-} 
-
-.footer-content h2{
-    color: var(--wm-colours-light);
-}
-
-.footer-content p{
-    color: var(--wm-colours-light);
-    
-}
-
-.icon-item{
-    position: relative;
-    display: inline-block;
-    margin-right: 1rem;
-}
-
-.icon-item:last-child {
-    margin-right: 0;
-}
-
-.icon-hoverable {
-    position: relative;
-    display: inline-block;
-    margin-right: 1rem;
-}
-
-.icon-hoverable .tooltip-text {
-    visibility: hidden;
-    background-color: rgb(136, 240, 240);
-    color: black;
-    text-align: center;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-  
-    position: absolute;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-.icon-hoverable:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-  }
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    list-style-type: none;
-    padding: 1rem;
-    margin: 1.2rem;
-    font-size: 1.2em;
-}
-
-#icons-light {
-    font-size: large;
-    z-index: 4;
-}
-
-.fab-light {
-    color: var(--wm-colours-light)
-}
-
-/*Vertical Sidebar*/
-
-.vertical-sidebar {
-    width: 25rem; /* Sidebar width */
-    left: 3rem;
-    position: fixed; 
-    background-color: rgb(178, 226, 235);
-    overflow-x: hidden;
-    border-radius: 2.5rem;
-}
-
-.sidebar-column {
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 1rem;
-}
-
-.sidebar-item {
-    padding: 0.5rem;
-    text-decoration: none;
-    display: block;
-}
-
-.vertical-sidebar a:hover { /* Change link color on hover */
-    color: #4ea6c9;
-}
-
-.blog-page { /* Style for the main content area */
-    margin-left: 30rem; /* Push content to the right by the sidebar width */
-    padding: 20px;
-}
-
-dl dt{
-  padding: 0.5rem 0;
-}
+/* Pictures and Videos */
 
 .lightbox-overlay {
   position: fixed;
@@ -591,6 +576,42 @@ dl dt{
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/*Vertical Sidebar*/
+
+.vertical-sidebar {
+    width: 25rem; /* Sidebar width */
+    left: 3rem;
+    position: fixed; 
+    background-color: rgb(178, 226, 235);
+    overflow-x: hidden;
+    border-radius: 2.5rem;
+}
+
+.sidebar-column {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+.sidebar-item {
+    padding: 0.5rem;
+    text-decoration: none;
+    display: block;
+}
+
+.vertical-sidebar a:hover { /* Change link color on hover */
+    color: #4ea6c9;
+}
+
+.blog-page { /* Style for the main content area */
+    margin-left: 30rem; /* Push content to the right by the sidebar width */
+    padding: 20px;
+}
+
+dl dt{
+  padding: 0.5rem 0;
 }
 
 /* Fun font animations */
