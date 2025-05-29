@@ -181,7 +181,7 @@ ul li{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    min-height: 6vh;
+    min-height: 8vh;
 	  z-index: 1000;
 }
 
@@ -193,7 +193,7 @@ ul li{
     -webkit-overflow-scrolling: touch;
     list-style-type: none;
     padding: 1rem;
-    margin-top: 1.2rem;
+    margin-top: 1rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
     margin-bottom: 0.8rem;
