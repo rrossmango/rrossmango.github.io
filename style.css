@@ -18,7 +18,7 @@ body{
     position: relative;
     margin: 0;
     overflow-x: hidden;
-    padding-top: 10vh;
+    padding-top: 9vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -441,6 +441,7 @@ footer {
   flex-direction: column;
   display: flex;
   width: auto;
+  justify-self: center;
   height: 350px;
   border-radius: 8px;
 }
@@ -476,6 +477,7 @@ footer {
     height: 350px;
     object-fit: cover;
     border-radius: 8px;
+    justify-self: center;
     display: block;
     flex-shrink: 0;  /* No shrink whatsoever */
     /* flex: 1 1 auto; */ /* Grows to fill the space, or shrink if needed if the caption grows" */
@@ -490,6 +492,7 @@ footer {
     height: 350px;
     object-fit: contain;
     border-radius: 8px;
+    justify-self: center;
     display: block;
     flex-shrink: 0;  /* No shrink whatsoever */
     /* flex: 1 1 auto; */ /* Grows to fill the space, or shrink if needed if the caption grows" */
@@ -501,6 +504,7 @@ footer {
     object-fit: contain;
     border-radius: 8px;
     display: block;
+    justify-self: center;
     flex-shrink: 0; /* No shrink whatsoever */
     /* flex: 1 1 auto; */ /* Grows to fill the space, or shrink if needed if the caption grows" */
   }
